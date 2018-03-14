@@ -9,10 +9,12 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Date;
+//Second fix from Analysis, unused import
+//import java.util.Date;
 
 import android.app.Activity;
-import android.content.Context;
+//Third fix from Analysis, unused import
+//import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +29,8 @@ import com.google.gson.reflect.TypeToken;
 
 public class LonelyTwitterActivity extends Activity {
 
-	private LonelyTwitterActivity activity = this;
+	//First fix from Analysis, added final.
+	private final LonelyTwitterActivity activity = this;
 
 	private static final String FILENAME = "file.sav";
 	private EditText bodyText;
